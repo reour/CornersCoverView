@@ -23,6 +23,28 @@ dependencies {
 }
 ```
 
+Usage
+-----
+```xml
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+        <ImageView
+            android:id="@+id/your_view"
+            android:layout_width="200dp"
+            android:layout_height="120dp" />
+    
+        <com.reour.library.view.CornersCoverView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            app:corners_color="#23FF11"
+            app:corners_radius="60dp" />
+            
+</RelativeLayout>
+```
+
 Attribute
 -----
 - app:corners_radius
@@ -35,9 +57,6 @@ Attribute
 - app:left_bottom_color
 - app:right_top_color
 - app:right_bottom_color
-
-Usage
------
 
 Changelog
 ---------
