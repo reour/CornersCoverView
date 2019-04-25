@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_one"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg" />
+
+        <com.reour.library.view.CornersCoverView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:corners_color="#FFF"
+            app:corners_radius="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_two"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg" />
+
+        <com.reour.library.view.CornersCoverView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:corners_color="#FFF"
+            app:left_bottom_radius="50dp"
+            app:left_top_radius="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_three"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg" />
+
+        <com.reour.library.view.CornersCoverView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:corners_color="#23FF11"
+            app:corners_radius="60dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
